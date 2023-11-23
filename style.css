@@ -68,14 +68,40 @@ body{
 .header{
     grid-column: 2 / span 2;
     grid-row: 1 / 3;
-    background-color: aquamarine;
+    background-color:white;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
 .nav{
-    background-color: #f5d0fe;
+    /* background-color: #f5d0fe; */
     display: grid;
     grid-template-columns: 1fr 4fr 1fr 1fr 1fr;
     
+}
+.main{
+    display: grid;
+    grid-template-columns: 50px 4fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.main input{
+    border-radius: 13px;
+    border: none;
+    background-color: #e2e8f0;
+    height: 25px;
+}
+.main img{
+    width: 30%;
+    border-radius: 90%;
+    justify-self: center;
+    margin-left: -60px;
+}
+.main svg{
+    justify-self: end;
+}
+.main p{
+    justify-self: start;
+    margin-left: -60px;
 }
 .nav img{
     width: 50%;
@@ -109,7 +135,7 @@ body{
 
 .projects .card{
     border-left: 9px solid #fbbf24;
-    height: 190px;
+    height: 215px;
     border-radius: 8px;
     padding: 10px;
     background-color: white;
@@ -129,6 +155,7 @@ body{
     grid-template-columns: 1fr;
     padding: 32px;
     border-radius: 8px;
+    margin-top: 25px;
 
 }
 
