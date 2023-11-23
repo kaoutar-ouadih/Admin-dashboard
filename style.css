@@ -15,12 +15,12 @@ body{
 .container{
     display: grid;
     grid-template-columns: 300px 2fr 1fr;
-    grid-template-rows: 70px 37px 450px 360px;
+    grid-template-rows: 99px 70px 450px 360px;
 
 }
 
 .sidebar{
-    background-color: #0ea5e9;
+    background-color: #1992d4;
     grid-column: 1 / 2;
     grid-row: 1 / span 4;
     display: grid;
@@ -69,11 +69,34 @@ body{
     grid-column: 2 / span 2;
     grid-row: 1 / 3;
     background-color: aquamarine;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
 .nav{
     background-color: #f5d0fe;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr 1fr 1fr;
+    
 }
-
+.nav img{
+    width: 50%;
+    border-radius: 90%;
+    justify-self: center;
+}
+.nav p{
+    align-self: center;
+    justify-self: start;
+    margin-left: -20px;
+}
+.nav button{
+    border-radius: 18px;
+    background-color:#1992d4 ;
+    border: none;
+    height: 30px;
+    width: 70%;
+    align-self: center;
+    font-weight: bold;
+    color: white;
+}
 .projects{
     grid-column: 2;
     grid-row: 3 / 5;
